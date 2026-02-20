@@ -92,6 +92,8 @@ Heavy discounting is the primary driver of margin collapse
 
 -SQL (profit, margin, cohort-style aggregations)
 -Dimensional data modelling (star schema)
+- SQL (PostgreSQL)
+- Python (Jupyter for validation & exports)
 -Profitability and root-cause analysis
 -Reproducible outputs (CSV + notebooks)
 
@@ -121,6 +123,10 @@ project_sales_cycle2/
 ├── requirements.txt
 └── .gitignore
 ```
+
+---
+
+
 
 ## Outcome
 
