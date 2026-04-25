@@ -1,13 +1,4 @@
--- 03_category_margin.sql
--- Purpose: Revenue, profit, and margin by category (strategic view)
-
-select
-  p.category,
-  sum(f.sales)  as revenue,
-  sum(f.profit) as profit,
-  round(sum(f.profit) / nullif(sum(f.sales), 0) * 100, 2) as margin_pct
-from cycle2_analytics.fact_sales f
-join cycle2_analytics.dim_product p
-  on f.product_id = p.product_id
-group by p.category
-order by margin_pct desc;
+"category","revenue","profit","margin_pct"
+"Technology","836154.10","145454.9481","17.40"
+"Office Supplies","719046.99","122490.8008","17.04"
+"Furniture","741999.98","18451.2728","2.49"
